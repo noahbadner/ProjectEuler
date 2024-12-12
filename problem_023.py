@@ -41,7 +41,7 @@ def abundant_numbers(n):
     return abundant_list
 
 def sum_of_two(input_list):
-    """Returns a list of all numbers that can be found by summing two elements of the given list"""
+    """Returns a set of all numbers that can be found by summing two elements of the given list"""
     ret_set = set()
     for i in range(len(input_list)):
         for j in range(len(input_list)-i):
