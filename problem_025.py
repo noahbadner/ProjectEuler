@@ -34,7 +34,6 @@ def fibonacci_index_of_len(n):
         b_index += 1
     return b_index
 
-
 def main():
     """Main method"""
     solution = fibonacci_index_of_len(1000)
