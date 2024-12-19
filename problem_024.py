@@ -14,7 +14,10 @@
 # Solution: 2783915460
 
 def lexicographic_permutations(input_digits):
-    """Returns a list of all lexicographic permutations of the given input digits as defined above"""
+    """
+    Returns a list of all lexicographic permutations of the given input digits as a string as defined above
+    NOTE: Digits must be sorted in the desired order
+    """
     return _lexicographic_permutations_helper([c for c in input_digits])
 
 def _lexicographic_permutations_helper(digits_list):
