@@ -15,7 +15,7 @@
 
 def lexicographic_permutations(input_digits):
     """Returns a list of all lexicographic permutations of the given input digits as defined above"""
-    return _lexicographic_permutations_helper(input_digits)
+    return _lexicographic_permutations_helper([c for c in input_digits])
 
 def _lexicographic_permutations_helper(digits_list):
     """Helper function that recursively returns a list of lexicographic permutations given an input list of digits"""
@@ -34,7 +34,7 @@ def _lexicographic_permutations_helper(digits_list):
 
 def main():
     """Main method"""
-    solution = lexicographic_permutations(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])[999999]
+    solution = lexicographic_permutations("0123456789")[999999]
     print(solution)
 
 
